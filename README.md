@@ -50,3 +50,7 @@ NGOs can use this tool to:
 * Volunteer management system.
 * Appointment scheduling.
 * Advanced AI-powered symptom analysis.
+
+## Project Preview
+
+![Healthcare Support Assistant](screenshots/project-preview.png)
