@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Support Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🏥 Healthcare Support Assistant</h1>
+
+        <p class="subtitle">
+            Helping NGOs prioritize patient support requests through automated case analysis.
+        </p>
+
+        <div class="info-box">
+            <h3>How It Works</h3>
+
+            <p>
+                Patients can submit healthcare concerns.
+                The system automatically analyzes symptoms,
+                assigns a priority level, and generates a support summary.
+            </p>
+        </div>
+
+        <form id="supportForm">
+
+            <label>Full Name</label>
+            <input type="text" id="name" required>
+
+            <label>Age</label>
+            <input type="number" id="age" required>
+
+            <label>Email</label>
+            <input type="email" id="email" required>
+
+            <label>Phone Number</label>
+            <input type="tel" id="phone" required>
+
+            <label>Location</label>
+            <input type="text" id="location" required>
+
+            <label>Describe Your Health Concern</label>
+            <textarea id="concern" rows="5" required></textarea>
+
+            <button type="submit">
+                Generate Summary
+            </button>
+
+        </form>
+
+        
+        <div id="result"></div>
+
+    </div>
+
+    
+    <div class="chat-icon" id="chatIcon">
+
+        <img
+            src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png"
+            alt="AI Assistant">
+
+    </div>
+
+    
+    <div class="chat-container" id="chatContainer">
+
+        
+        <div class="chat-header">
+
+            <div class="chat-profile">
+
+                <img
+                    src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png"
+                    alt="Bot">
+
+                <div>
+
+                    <div class="bot-name">
+                        HealthBot AI
+                    </div>
+
+                    <small>
+                        🟢 Online
+                    </small>
+
+                </div>
+
+            </div>
+
+            <span id="closeChat">
+                ✕
+            </span>
+
+        </div>
+
+        
+        <div id="aiResponse" class="chat-body">
+
+            <div class="bot-message">
+                👋 Hello! I'm HealthBot AI.
+                <br><br>
+                Ask me any healthcare-related question.
+            </div>
+
+        </div>
+
+        
+        <div class="chat-footer">
+
+            <input
+                type="text"
+                id="userQuestion"
+                placeholder="Type your message...">
+
+            <button id="askBtn" type="button">
+                ➤
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
